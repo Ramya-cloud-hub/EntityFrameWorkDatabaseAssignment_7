@@ -1,0 +1,33 @@
+﻿@model PeopleViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<input type="button" value="People" id="All" />
+
+<input id="input" type="number" />
+<input type="button" value="Details" id="Findby" />
+<input type="button" value="Delete" id="Delete" />
+
+<div id="enviroment-container"></div>
+
+<script>
+    $("#All").click(function () {
+        var url = "Ajax/PeoplePartial";
+        $.get(url, function (data) {
+            $("#enviroment-container").html(data);
+        });
+    });
+    $("#Findby").click(function () {
+        var url = "Ajax/PersonPartial/" + document.getElementById("input").value;
+        $.post(url, function (data) {
+            $("#enviroment-container").html(data);
+        });
+    });
+    $("#Delete").click(function () {
+        var url = "Ajax/Delete/" + document.getElementById("input").value;
+        $.post(url, function (data) {
+            $("#enviroment-container").html(data);
+        });
+    });
+</script>

@@ -1,0 +1,77 @@
+﻿body { 
+    margin: auto;
+    display: block;
+    font-family: sans-serif;
+    max-width:1024px;
+}
+.Bodycontainer{
+    height:800px;
+
+}
+.nav-menu-items a {
+    text-align: center;
+    margin: 0px;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+ul li{
+    float:left;
+    display:block;
+}
+.login {
+    display: block;
+    float: left;
+    color: black;
+    padding: 25px;
+}
+
+    .login a {
+        color: black;
+        font-size: 15px;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+
+a:hover {
+    color: black;
+}
+
+.headline {
+    padding: 15px 0px;
+    text-align: left;
+}
+.email {
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.name {
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.messeage {
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 45px;
+}
+
+.teliphone {
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+}
+footer {
+    text-align: center;
+    display: block;
+    height: 60px;
+    width:100%;
+  
+}

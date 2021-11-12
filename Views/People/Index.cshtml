@@ -1,0 +1,34 @@
+﻿@model PeopleViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2><a asp-action="Create">Create Person</a></h2>
+@*<br/>
+<br/>*@
+
+@*<form asp-action="Index" method="post">
+    <label asp-for="FilterText"></label>
+    <input asp-for="FilterText" />
+</form>*@
+<div class="row">
+    <table class="table myTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th></th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@foreach (var item in Model.PersonList)
+{
+    <partial name="../Ajax/PersonPartial.cshtml" for="@item" />
+}
